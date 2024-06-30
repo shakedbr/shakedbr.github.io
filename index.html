@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaked Brody | Home Page</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #A8D5BA;
+      color: #333;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header img {
+      border-radius: 50%;
+      margin: 20px 0;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 4px solid #fff;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 42px;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #98B4AA;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 32px;
+      color: #98B4AA;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    .publication {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .publication h3 {
+      font-size: 24px;
+      margin: 0 0 10px;
+    }
+
+    .publication p {
+      margin: 5px 0;
+    }
+
+    a {
+      color: #98B4AA;
+      text-decoration: none;
+    }
+    .publication h3 {
+      color: #98B4AA;
+      text-decoration: none;
+    }
+    .publication a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #98B4AA;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      display: flex;
+      align-items: center;
+      color: #333;
+      text-decoration: none;
+      margin: 10px;
+      font-size: 18px;
+    }
+
+    .social-links img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    .social-links a:hover {
+      color: #555;
+    }
+
+    /* Smooth Scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    code {
+    background-color: #eee;
+    border-radius: 3px;
+    color: #333;
+    font-family: courier, monospace;
+    padding: 0 3px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shaked Brody</h1>
+    <img src="assets/images/profile.jpeg" alt="Shaked Brody">
+    <div class="social-links">
+      <a href="https://twitter.com/shakedbr">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEbS_Ekc9VBm2IuPqyre_PTWvGnNvuMmd-wVNN3_GjLAcXxCHULaG-tFfbGrs7d28QEag&usqp=CAU" alt="Twitter">
+        Twitter
+      </a>
+      <a href="https://scholar.google.co.il/citations?user=02jdt98AAAAJ">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="Google Scholar">
+        Google Scholar
+      </a>
+      <a href="https://github.com/shakedbr">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+        GitHub
+      </a>
+    </div>
+  </header>
+
+  <div class="navbar">
+    <a href="#about">Bio</a>
+    <a href="#publications">Publications</a>
+    <a href="#reports">Technical Reports</a>
+    <a href="#patents">Patents</a>
+    <a href="#service">Service</a>
+    <a href="#awards">Awards</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main>
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>I’m a Ph.D. student under the supervision of <a href="http://cs.technion.ac.il/~yahave/">Prof. Eran Yahav</a>. My research focuses on source code representations for machine learning models. We research machine learning approaches for solving code-related tasks such as code completion, edit completion, predicting method names, and automatic documentation generation.  My main interest is how to represent the code in such tasks. I'm also interested in methods for processing graphs using deep neural networks.</p>
+    </section>
+
+    <section id="publications" class="publications">
+      <h2>Publications</h2>
+
+      <div class="publication">
+        <h3>FuseCap: Leveraging Large Language Models to Fuse Visual Data into Enriched Image Captions</h3>
+        <p>Noam Rotstein, David Bensaid, <strong>Shaked Brody</strong>, Roy Ganz, Ron Kimmel</p>
+        <ul>
+            <li>Appeard in <strong><i>WACV'2024</i></strong></li>
+            <li>Project page: <a href="https://rotsteinnoam.github.io/FuseCap/">FuseCap</a></li>
+            <li><a href="https://arxiv.org/pdf/2305.17718.pdf">[PDF]</a>
+                <a href="https://github.com/RotsteinNoam/FuseCap">[Code]</a>
+                <a href="https://pastebin.com/raw/HTPdkAMrhttps://pastebin.com/raw/HTPdkAMr">[BibTex]</a></li>
+          </ul>
+      </div>
+
+      <div class="publication">
+        <h3>On the Expressivity Role of LayerNorm in Transformers’ Attention</h3>
+        <p><strong>Shaked Brody</strong>, <a href="https://urialon.ml/">Uri Alon</a>, Eran Yahav</p>
+        <ul>
+            <li>Appeard in <strong><i>Findings of ACL’2023</i></strong></li>
+            <li><a href="https://arxiv.org/pdf/2305.02582.pdf">[PDF]</a>
+                <a href="assets/images/layernorm_poster.pdf">[Poster]</a>
+                <a href="assets/images/ACL-on-the-expressivity-role-of-layernorm.pdf">[Slides]</a>
+                <a href="https://github.com/tech-srl/layer_norm_expressivity_role">[Code]</a>
+                <a href="https://twitter.com/shakedbr/status/1654449044851159040?s=20">[Tweet]</a>
+                <a href="https://pastebin.com/raw/a2UyVP8q">[BibTex]</a></li>
+          </ul>
+      </div>
+
+      <div class="publication">
+        <h3>How Attentive are Graph Attention Networks?</h3>
+        <p><strong>Shaked Brody</strong>, Uri Alon, Eran Yahav</p>
+        <ul>
+            <li>Appeard in <strong><i>ICLR’2022</i></strong></li>
+            <li><a href="https://arxiv.org/pdf/2105.14491.pdf">[PDF]</a>
+                <a href="assets/images/layernorm_poster.pdf">[Poster]</a>
+                <a href="assets/images/ICLR-How-attentive-are-gats-final.pdf">[Slides]</a>
+                <a href="https://iclr.cc/virtual/2022/poster/6366">[Video]</a>
+                <a href="https://github.com/tech-srl/how_attentive_are_gats">[Code]</a>
+                <a href="https://pastebin.com/raw/besiLuqp">[BibTex]</a></li>
+            <li>GATv2 implementation:
+                <ul>
+                <li><a href="https://pytorch-geometric.readthedocs.io/en/latest/modules/nn.html#torch_geometric.nn.conv.GATv2Conv">[PyTorch Geometric]</a>: <code>from torch_geometric.nn.conv.gatv2_conv import GATv2Conv</code></li>
+                <li><a href="https://docs.dgl.ai/en/latest/api/python/nn.pytorch.html#gatv2conv">[DGL]</a>: <code>from dgl.nn.pytorch import GATv2Conv</code></li>
+                <li><a href="https://shakedbr.cswp.cs.technion.ac.il/#:~:text=pytorch%20import%20GATv2Conv-,%5BTensorFlow%20GNN%5D,-%3A%C2%A0%20%C2%A0%20%C2%A0%20from%20tensorflow_gnn">[TensorFlow GNN]</a>: <code>from tensorflow_gnn.keras.layers import GATv2</code></li>
+                </ul>
+            </li>
+          </ul>
+      </div>
+
+      <div class="publication">
+        <h3>A Structural Model for Contextual Code Changes</h3>
+        <p><strong>Shaked Brody</strong>, Uri Alon, Eran Yahav</p>
+        <ul>
+            <li>Appeard in <strong><i>OOPSLA’2020</i></strong></li>
+            <li><a href="https://arxiv.org/pdf/2005.13209.pdf">[PDF]</a>
+                <a href="assets/images/A-Structural-Model-for-Contextual-Code-Changes-slides.pdf">[Slides]</a>
+                <a href="https://youtu.be/NgY6nx3bU0M">[Video]</a>
+                <a href="https://github.com/tech-srl/c3po/">[Code]</a>
+                <a href="https://pastebin.com/raw/mkbcXCEG">[BibTex]</a></li>
+          </ul>
+      </div>
+
+      <div class="publication">
+        <h3>code2seq: Generating Sequences from Structured Representations of Code</h3>
+        <p>Uri Alon, <strong>Shaked Brody</strong>, Omer Levi, Eran Yahav</p>
+        <ul>
+            <li>Appeard in <strong><i>ICLR'2019</i></strong></li>
+            <li>Online demo: <a href="https://code2seq.org">https://code2seq.org</a></li>
+            <li><a href="https://arxiv.org/pdf/1808.01400">[PDF]</a>
+                <a href="assets/images/ICLR19_poster_code2seq.pdf">[Poster]</a>
+                <a href="https://blog.sigplan.org/2020/02/12/from-programs-to-deep-models-part-2/">[Blog]</a>
+                <a href="https://github.com/tech-srl/code2seq/">[Code]</a>
+                <a href="https://pastebin.com/raw/bw548FeG">[BibTex]</a></li>
+          </ul>
+      </div>
+      
+    </section>
+
+    <section id="reports" class="reports">
+        <h2>Technical Reports</h2>
+
+        <div class="publication">
+            <h3>BLOOM: A 176B-Parameter Open-Access Multilingual Language Model</h3>
+            <p>Teven Le Scao, ..., <strong>Shaked Brody</strong>, ...</p>
+            <ul>
+                <li><a href="https://arxiv.org/pdf/2211.05100.pdf">[PDF]</a>
+                    <a href="https://pastebin.com/raw/mkbcXCEG">[BibTex]</a></li>
+              </ul>
+          </div>
+    </section>
+
+    <section id="patents" class="patents">
+        <h2>Patents</h2>
+
+        <div class="publication">
+            <h3>Loading Deep Learning Network Models for Processing Medical Images</h3>
+            <p>Hans Harald Zachmann, Simona Rabinovici-Cohen, <strong>Shaked Brody</strong></p>
+            <ul>
+                <li><a href="https://patentimages.storage.googleapis.com/18/4d/14/bed5686ad246f4/US20210125329A1.pdf">[PDF]</a>
+                    <a href="https://pastebin.com/raw/4cyet4aZ">[BibTex]</a></li>
+              </ul>
+          </div>
+    </section>
+
+    <section id="service" class="service">
+        <h2>Service</h2>
+        <div>
+            <ul>
+                <li><strong>Program Committee</strong>: Deep Learning for Code workshop (2022, 2023), MSR’2021 Mining Challenge</li>
+                <li><strong>Reviewer</strong>: NeurIPS (2023), ACL (2023)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="awards" class="awards">
+        <h2>Awards</h2>
+        <div>
+            <ul>
+                <li>2023 – Department Excellence Scholarship</li>
+                <li>2023 – Excellent Faculty TA</li>
+                <li>2022 – Department Excellence Scholarship</li>
+                <li>2019 – Dean’s Excellence  Scholarship</li>
+              </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Feel free to reach out to me through the following platforms:</p>
+      <div class="social-links">
+        <a href="https://twitter.com/shakedbr">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEbS_Ekc9VBm2IuPqyre_PTWvGnNvuMmd-wVNN3_GjLAcXxCHULaG-tFfbGrs7d28QEag&usqp=CAU" alt="Twitter">
+          Twitter
+        </a>
+        <a href="mailto:shakedbr@gmail.com">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/800px-Gmail_icon_%282020%29.svg.png" alt="Gmail">
+          Gmail
+        </a>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Shaked Brody. All rights reserved.</p>
+  </footer>
+</body>
+</html>
